@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="hed"></header>
+    <div id="form">
+    <form action="file:///D:/lavel%20up/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0%203/index.html" name="form" method="get">
+        <input type="text" name="name" class="name" placeholder="Name"/>
+        <br>
+        <input type="text" name="email" class="email" placeholder="Email"/>
+        <br>
+        <input type="password" name="pass" class="pass" placeholder="Password"/>
+        <br>
+        <input class="submit" value="login" type="submit"/>
+    </form>
+    </div>
+    <footer class="foot"></footer>
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        if(urlParams.get('name') === 'Diana' && urlParams.get('pass') === 'unicats22') {
+            alert('Yur are logged In');
+        } else {
+            alert('Wrong name or password!');
+        }
+        
+    </script>
+</body>
+</html>
